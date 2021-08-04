@@ -1,0 +1,22 @@
+version: "2.1"
+services:
+    studio-frontend:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: dahlia.studio-frontend
+        image: edxops/studio-frontend:latest
+        volumes:
+            - .:/studio-frontend
+            - container_only_node_modules:/studio-frontend/node_modules
+        ports:
+            - "18011:18011"
+            - "9229:9229"
+
+networks:
+    default:
+        external:
+            name: devstack_default
+
+volumes:
+  container_only_node_modules:

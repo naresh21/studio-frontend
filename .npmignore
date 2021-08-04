@@ -1,0 +1,17 @@
+.eslintignore
+.eslintrc.json
+.gitignore
+.travis.yml
+docker-compose.linux.yml
+docker-compose.yml
+Dockerfile
+Makefile
+npm-debug.log
+
+config
+coverage
+node_modules
+public
+
+src/data/i18n/locales/tmp/
+src/data/i18n/locales/po/

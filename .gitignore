@@ -1,0 +1,8 @@
+.DS_Store
+.eslintcache
+node_modules
+npm-debug.log
+coverage
+
+dist/
+src/data/i18n/default/src/

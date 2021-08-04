@@ -1,0 +1,27 @@
+{
+  "extends": "eslint-config-edx",
+  "parser": "babel-eslint",
+  "rules": {
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "config/*.js",
+          "**/*.test.jsx",
+          "setupTests.js",
+          "src/utils/i18n/enzymeHelper.jsx"
+        ]
+      }
+    ],
+    "class-methods-use-this": [
+      "off"
+    ],
+    "quote-props": [
+      "error",
+      "consistent-as-needed"
+    ]
+  },
+  "env": {
+    "jest": true
+  }
+}
